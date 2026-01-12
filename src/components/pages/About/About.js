@@ -57,7 +57,7 @@ const About = () => {
             transition={{ duration: 1.2 }}
             className="font-normal text-white/90 text-[2vh]"
           >
-            I’m a final-year CSE student at Asansol Engineering College and an ex-SDE Intern at GrowthPurple Technologies. I build full-stack apps using React, Node.js, Django, and Laravel, ranging from GenAI platforms to real-time chat systems.
+            I’m a final-year CSE student at Asansol Engineering College and an Intern at Keysight Technologies. I build full-stack apps using React, Node.js, Django, and Laravel, ranging from GenAI platforms to real-time chat systems.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: 50 }}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import gpt from '../../../Assests/experience/GPT-Logo.png'
 import gdgc from '../../../Assests/experience/gdgc.png'
 import smt from '../../../Assests/experience/samllltt.png'
+import pave from '../../../Assests/experience/pave.png'
 
 
 
@@ -52,10 +53,31 @@ const Education = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          contentStyle={{ background: "#242323", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #242323" }}
+          date="Oct 2025 — Dec 2025"
+          iconStyle={{ background: "#ffff", color: "#fff" }}
+          icon={<ImageIcon imgSrc={pave} />} // Replace with actual image URL
+        >
+          <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Pave AI (Remote)
+          </h4>
+          <p>
+            • Built an <strong>AI college counseling platform</strong> using <strong>Django</strong> and <strong>React.js</strong> with a <strong>RAG system</strong>, improving accuracy by <strong>40%</strong>.<br />
+
+            • Created <strong>SAT prep content</strong> and a <strong>performance analytics dashboard</strong>, boosting learning efficiency by <strong>35%</strong>.<br />
+
+            • Implemented end-to-end development, <strong>REST APIs</strong>, and <strong>Django commands</strong> with a responsive UI, reducing effort by <strong>30%</strong>.
+
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           contentStyle={{ background: "#ff014f", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #ff014f" }}
           date="Aug 2024 — July 2025"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: "#ffff", color: "#fff" }}
           icon={<ImageIcon imgSrc={gpt} />} // Replace with actual image URL
         >
           <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
@@ -68,14 +90,14 @@ const Education = () => {
             • Launched <strong>FirstRound</strong>, an AI interview tool with live video, auto-transcription, and BI dashboards—boosting HR decisions by 55%.
           </p>
         </VerticalTimelineElement>
-        
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#242323", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #242323" }}
           date="Sep 2024 - Dec 2024"
           iconStyle={{ background: "#242323", color: "#fff", }}
-          icon={<ImageIcon imgSrc={smt}/>}
+          icon={<ImageIcon imgSrc={smt} />}
         >
           <h3 className="vertical-timeline-element-title">
             Freelancer
@@ -89,7 +111,7 @@ const Education = () => {
           </p>
         </VerticalTimelineElement>
 
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#ff014f", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #ff014f" }}
@@ -124,7 +146,7 @@ const Education = () => {
             • Mentored students in problem-solving and algorithms.
             <br />• Hosted hackathons and CP contests for the community.
           </p>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
 
       </VerticalTimeline>
     </div>
